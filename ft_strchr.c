@@ -9,7 +9,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (c == s[i])
 	{
-		return ((char *s)&s[i]);
+		return ((char *)&s[i]);
 	}
 	return (0);
 }
