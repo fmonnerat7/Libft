@@ -6,9 +6,11 @@
 /*   By: femonner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 14:25:17 by femonner          #+#    #+#             */
-/*   Updated: 2022/03/14 14:50:07 by femonner         ###   ########.fr       */
+/*   Updated: 2022/03/14 15:16:49 by femonner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

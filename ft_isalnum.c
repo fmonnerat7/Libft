@@ -6,11 +6,13 @@
 /*   By: femonner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 15:40:27 by femonner          #+#    #+#             */
-/*   Updated: 2022/02/17 15:46:28 by femonner         ###   ########.fr       */
+/*   Updated: 2022/03/14 15:26:34 by femonner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_isalnum(int i)
+#include "libft.h"
+
+int	ft_isalnum(int i)
 {
 	if ((i > 47 && i < 58) || (i > 64 && i < 91) || (i > 96 && i < 123))
 	{

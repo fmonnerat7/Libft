@@ -6,9 +6,11 @@
 /*   By: femonner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 17:44:55 by femonner          #+#    #+#             */
-/*   Updated: 2022/02/25 18:00:55 by femonner         ###   ########.fr       */
+/*   Updated: 2022/03/14 15:17:14 by femonner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

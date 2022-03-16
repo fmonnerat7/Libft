@@ -6,11 +6,13 @@
 /*   By: femonner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 15:34:53 by femonner          #+#    #+#             */
-/*   Updated: 2022/02/17 15:38:59 by femonner         ###   ########.fr       */
+/*   Updated: 2022/03/14 15:26:02 by femonner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_isdigit(int i)
+#include "libft.h"
+
+int	ft_isdigit(int i)
 {
 	if (i > 47 && i < 58)
 	{
