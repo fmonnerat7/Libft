@@ -1,41 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: femonner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/16 11:57:55 by femonner          #+#    #+#             */
-/*   Updated: 2022/03/17 15:57:54 by femonner         ###   ########.fr       */
+/*   Created: 2022/03/17 15:30:37 by femonner          #+#    #+#             */
+/*   Updated: 2022/03/17 15:32:19 by femonner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	char	*str3;
-	int		i;
-	int		aux;
+	int	i;
 
-	if (!s1 || !s2)
-		return (0);
-	str3 = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (!str3)
-		return (0);
 	i = 0;
-	while (s1[i] != '\0')
+	if (!s || !f)
+		return ;
+	while (s[i] != '\0')
 	{
-		str3[i] = s1[i];
+		f (i, &s[i]);
 		i++;
 	}
-	aux = 0;
-	while (s2[aux] != '\0')
-	{
-		str3[i] = s2[aux];
-		i++;
-		aux++;
-	}
-	str3[i] = '\0';
-	return (str3);
 }

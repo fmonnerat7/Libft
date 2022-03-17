@@ -6,7 +6,7 @@
 /*   By: femonner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 12:24:28 by femonner          #+#    #+#             */
-/*   Updated: 2022/03/14 15:18:36 by femonner         ###   ########.fr       */
+/*   Updated: 2022/03/17 16:19:47 by femonner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ char	*ft_strrchr(const char *s, int c)
 	aux = s;
 	i = ft_strlen(s);
 	s = (s + i);
-	while (*s != *aux && c != *s)
+	while (*s != *aux && (unsigned char)c != *s)
 	{
 		s--;
 	}
-	if (c == *s)
+	if ((unsigned char)c == *s)
 	{
 		return ((char *)s);
 	}
